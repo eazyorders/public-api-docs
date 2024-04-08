@@ -17,7 +17,9 @@ const sidebars: SidebarsConfig = {
       'intro',
       'authentication',
       'webhooks',
-      'create-product-api'
+      'create-product-api',
+      'update-shipping-api',
+      'connect-dropshipping'
   ]
 
   // But you can create a sidebar manually

@@ -24,7 +24,8 @@ This documentation is structured to provide you with clear and concise informati
 - **Introduction**: Overview of EasyOrders API and how to get started.
 - **Authentication**: Information on authentication methods and best practices.
 - **Webhooks**: How to register webhook to receive payload when event happens.
-- **FAQs**: Frequently asked questions and troubleshooting tips.
+- **Create Products**: Creating a new product for store.
+- **Update shipping Areas**: update store shipping areas.
 
 ## Need Help?
 
