@@ -16,7 +16,8 @@ const sidebars: SidebarsConfig = {
   docs: [
       'intro',
       'authentication',
-      'webhooks'
+      'webhooks',
+      'create-product-api'
   ]
 
   // But you can create a sidebar manually
