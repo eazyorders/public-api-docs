@@ -3,9 +3,9 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  title: "EasyOrders API Docs",
+  tagline: "EasyOrders public API Documentation",
+  favicon: "img/easy-icon.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
@@ -15,8 +15,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "easyorders", // Usually your GitHub org/user name.
+  projectName: "easyorders api", // Usually your repo name.
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -57,9 +57,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Easy Orders",
+      title: "Public API Docs",
       logo: {
-        alt: "My Site Logo",
+        alt: "EasyOrders",
         src: "img/easy-icon.png",
       },
       // items: [
@@ -118,7 +118,7 @@ const config: Config = {
     // },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      darkTheme: prismThemes.vsDark,
     },
   } satisfies Preset.ThemeConfig,
 };
