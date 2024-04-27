@@ -1,5 +1,5 @@
 ---
-id: create-product-api-2
+id: create-product-api
 title: Create Product API
 sidebar_label: Create Product API
 ---

@@ -53,7 +53,7 @@ https://seller.easyorders.localhost/#/install-app?app_name=YOUR%20APP%20NAME&app
 Replace the placeholders with your actual values.
 
 ## After user accept
-we will send you post request to callback_url with {api_key: generate_key}
+we will send you post request to callback_url with `{api_key: generate_key}`
 
 ## Conclusion
 

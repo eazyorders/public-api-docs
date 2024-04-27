@@ -22,8 +22,8 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "Products",
       items: [
-        "create-product-api-2",
-        "update-product-api-2",
+        "create-product-api",
+        "update-product-api",
         "get-product-by-id",
         "get-all-products",
       ],
