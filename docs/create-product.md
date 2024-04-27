@@ -1,5 +1,5 @@
 ---
-id: create-product-api-2
+id: create-product-api
 title: Create Product API
 sidebar_label: Create Product API
 ---
@@ -41,7 +41,10 @@ const product = {
   ],
   categories: [
     {
-      id: "category-ids",
+      id: "category-id",
+    },
+    {
+      id: "category-id",
     },
   ],
   buy_now_text: "اضغط هنا للشراء",
