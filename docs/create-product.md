@@ -47,6 +47,9 @@ const product = {
       id: "category-id",
     },
   ],
+  quantity: 12, // or 0 if not available
+  track_stock: true, // true if you want to track quantity and decrease when new order to product
+  disable_orders_for_no_stock: false, // disable getting orders if quantity is 0
   buy_now_text: "اضغط هنا للشراء",
   is_reviews_enabled: true,
   fake_visitors_min: 20,
