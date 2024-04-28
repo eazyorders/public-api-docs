@@ -5,7 +5,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config: Config = {
   title: "EasyOrders API Docs",
   tagline: "EasyOrders public API Documentation",
-  favicon: "img/easy-icon.png",
+  favicon: "https://www.easy-orders.net/easy-icon.png",
 
   // Set the production url of your site here
   url: "https://public-api-docs.easy-orders.net",
@@ -67,7 +67,7 @@ const config: Config = {
       title: "Public API Docs",
       logo: {
         alt: "EasyOrders",
-        src: "img/easy-icon.png",
+        src: "https://www.easy-orders.net/easy-icon.png",
       },
       // items: [
       //   {
