@@ -30,4 +30,12 @@ To successfully integrate a dropshipping provider with your platform, follow the
 1. **Enable free shipping option**: Provide the user with the choice to offer free shipping.
 2. **Add shipping cost to products**: When creating a product using the API, include shipping costs as part of the product details.
 
-Follow these steps to seamlessly integrate a dropshipping provider into your platform, providing users with a wide range of products and shipping options.
+## Step 6: Automate Api Key and webhook creation
+You can use Authorize link to enable users to accept installing your app and create API key and webhook automatically.
+for more information please check [authorize app link](/docs/install-app.md)
+
+## Note
+please consider your database structure to enable user have multiple stores and each store have its own API key and webhook. Most of the users will have multiple stores and want to connect each store with same account.
+
+## Conclusion
+Follow these steps to seamlessly integrate a drop-shipping provider into your platform, providing users with a wide range of products and shipping options.
