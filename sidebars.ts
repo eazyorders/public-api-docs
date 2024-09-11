@@ -26,6 +26,7 @@ const sidebars: SidebarsConfig = {
         "update-product-api",
         "get-product-by-id",
         "get-all-products",
+        "update-product-stock",
       ],
     },
     {

@@ -10,7 +10,7 @@ The update Product API endpoint allows you to add a new product to your store in
 
 ## You Must have API Key
 
-You must get API key from previous docs and API key should have permission to update products:write
+You must get API key from previous docs and API key should have permission to update products:update
 
 ## Endpoint
 
