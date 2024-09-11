@@ -1,5 +1,5 @@
 ---
-id: update-product-stock-api
+id: update-product-stock
 title: Update Product Stock API
 sidebar_label: Update Product Stock API
 ---
