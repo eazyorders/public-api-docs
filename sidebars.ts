@@ -38,6 +38,11 @@ const sidebars: SidebarsConfig = {
         "update-category-by-id",
       ],
     },
+    {
+      type: "category",
+      label: "Orders",
+      items: ["get-order-by-id", "update-order-status", "add-order-notes"],
+    },
     "rate-limit",
     "permissions",
     "create_authorized_app_link",
