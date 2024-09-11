@@ -6,7 +6,7 @@ sidebar_label: Update Product Stock API
 
 # Update Product Stock API
 
-The Update Product Stock API endpoint allows you to update the stock quantity of a specific product in your EasyOrders store.
+The Update Product Stock API endpoint allows you to update the stock quantity of a specific product or variant in your EasyOrders store.
 
 ## You Must have API Key
 
