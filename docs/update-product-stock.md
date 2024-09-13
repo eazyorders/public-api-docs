@@ -17,7 +17,7 @@ You must get an API key from previous docs and the API key should have permissio
 To update the stock quantity of a product, use the following endpoint:
 
 - **Method**: PATCH
-- **URL**: `https://api.easy-orders.net/api/v1/external-apps/products/:sku/quantity`
+- **URL**: `https://api.easy-orders.net/api/v1/external-apps/products/sku/:sku/quantity`
 
 ### Request Body (JSON)
 
