@@ -38,7 +38,7 @@ Replace `string` with your API key.
 To update the details of a product variant, use the following endpoint:
 
 - **Method**: PATCH
-- **URL**: `https://api.easy-orders.net/api/v1/external-apps/products/variants/:taager_code/quantity` (taager_code is the code of the variant you set when creating the product)
+- **URL**: `https://api.easy-orders.net/api/v1/external-apps/products/variants/:product_taager_code/:variant_taager_code/quantity` (taager_code is the code of the variant you set when creating the product or variant)
 
 ### Request Headers
 
