@@ -23,6 +23,48 @@ You must get API key from previous docs and API key should have permission to pr
 
 Replace `string` with your API key.
 
+## Filter the products
+
+### Basic Syntax
+
+Filters follow this pattern:
+
+```
+field||operator||value
+```
+
+Where:
+
+- `field` is the property name you want to filter on
+- `operator` is the comparison operation
+- `value` is what you're comparing against
+
+### Operators
+
+| Operator | Description              | Example                       |
+| -------- | ------------------------ | ----------------------------- |
+| `eq`     | Equal to                 | `filter=name\|\|eq\|\|iphone` |
+| `neq`    | Not equal to             | `filter=quantity\|\|neq\|\|0` |
+| `gt`     | Greater than             | `filter=price\|\|gt\|\|100`   |
+| `gte`    | Greater than or equal to | `filter=price\|\|gte\|\|175`  |
+| `lt`     | Less than                | `filter=quantity\|\|lt\|\|10` |
+| `lte`    | Less than or equal to    | `filter=price\|\|lte\|\|150`  |
+
+### Multiple Filters
+
+Multiple filters should be specified as separate filter parameters in the query:
+
+```
+filter=category_id||eq||category-id&filter=price||gte||100
+```
+
+This example will filter for records where:
+
+- The category_id is equal to category-id AND
+- The price is greater than or equal to 100
+
+Each filter condition is specified using a separate `filter=` parameter in the URL, joined with the `&` character.
+
 ## Response Body (JSON)
 
 ```js
@@ -49,7 +91,7 @@ const product = {
     },
     {
       id: "category-id",
-      name: "name"
+      name: "name",
     },
   ],
   buy_now_text: "اضغط هنا للشراء",

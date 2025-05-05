@@ -9,7 +9,8 @@ sidebar_label: get all category category API
 The get all category category API endpoint allows you to add a new category to your store in EasyOrders.
 
 ## You Must have API Key
-You must get API key from previous docs and API key should have permission to categories:read  
+
+You must get API key from previous docs and API key should have permission to categories:read
 
 ## Endpoint
 
@@ -21,6 +22,54 @@ You must get API key from previous docs and API key should have permission to ca
 - **Api-Key**: `string`
 
 Replace `string` with your API key.
+
+## Filter the products
+
+### Basic Syntax
+
+Filters follow this pattern:
+
+```
+field||operator||value
+```
+
+Where:
+
+- `field` is the property name you want to filter on
+- `operator` is the comparison operation
+- `value` is what you're comparing against
+
+### Operators
+
+| Operator | Description              | Example                       |
+| -------- | ------------------------ | ----------------------------- |
+| `eq`     | Equal to                 | `filter=name\|\|eq\|\|iphone` |
+| `neq`    | Not equal to             | `filter=quantity\|\|neq\|\|0` |
+| `gt`     | Greater than             | `filter=price\|\|gt\|\|100`   |
+| `gte`    | Greater than or equal to | `filter=price\|\|gte\|\|175`  |
+| `lt`     | Less than                | `filter=quantity\|\|lt\|\|10` |
+| `lte`    | Less than or equal to    | `filter=price\|\|lte\|\|150`  |
+
+### Fetch buy parent category id
+
+```
+filter=parent_id||eq||id-of-parent-category
+```
+
+### Multiple Filters
+
+Multiple filters should be specified as separate filter parameters in the query:
+
+```
+filter=parent_id||isnull&filter=hidden||eq||false
+```
+
+This example will filter for records where:
+
+- The parent_id is null AND
+- The hidden field equals false
+
+Each filter condition is specified using a separate `filter=` parameter in the URL, joined with the `&` character.
 
 ## Response Body (JSON)
 
