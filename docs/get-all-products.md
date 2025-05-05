@@ -41,14 +41,15 @@ Where:
 
 ### Operators
 
-| Operator | Description              | Example                       |
-| -------- | ------------------------ | ----------------------------- |
-| `eq`     | Equal to                 | `filter=name\|\|eq\|\|iphone` |
-| `neq`    | Not equal to             | `filter=quantity\|\|neq\|\|0` |
-| `gt`     | Greater than             | `filter=price\|\|gt\|\|100`   |
-| `gte`    | Greater than or equal to | `filter=price\|\|gte\|\|175`  |
-| `lt`     | Less than                | `filter=quantity\|\|lt\|\|10` |
-| `lte`    | Less than or equal to    | `filter=price\|\|lte\|\|150`  |
+| Operator | Description              | Example                         |
+| -------- | ------------------------ | ------------------------------- |
+| `eq`     | Equal to                 | `filter=name\|\|eq\|\|iphone`   |
+| `cont`   | Contains                 | `filter=name\|\|cont\|\|iphone` |
+| `neq`    | Not equal to             | `filter=quantity\|\|neq\|\|0`   |
+| `gt`     | Greater than             | `filter=price\|\|gt\|\|100`     |
+| `gte`    | Greater than or equal to | `filter=price\|\|gte\|\|175`    |
+| `lt`     | Less than                | `filter=quantity\|\|lt\|\|10`   |
+| `lte`    | Less than or equal to    | `filter=price\|\|lte\|\|150`    |
 
 ### Multiple Filters
 
