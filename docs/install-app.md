@@ -20,7 +20,7 @@ To create an authorized app link, follow these steps:
 1. Construct the URL using the following format:
 
 ```
-https://seller.easy-orders.net/#/install-app?
+https://app.easy-orders.net/#/install-app?
 app_description=<APP_DESCRIPTION>&
 app_icon=<APP_ICON_URL>&
 app_name=<APP_NAME>&
@@ -47,7 +47,7 @@ Replace the placeholders with the appropriate values:
 Here's an example of a constructed authorized app link:
 
 ```
-https://seller.easyorders.localhost/#/install-app?app_name=YOUR%20APP%20NAME&app_description=YOUR%20DESCRIPTION&permissions=products:read,products:create,shipping_areas&app_icon=https://wilsonclinic.com/wp-content/uploads/2018/12/placeholder-logo-2.png
+https://app.easy-orders.net/#/install-app?app_name=YOUR%20APP%20NAME&app_description=YOUR%20DESCRIPTION&permissions=products:read,products:create,shipping_areas&app_icon=https://wilsonclinic.com/wp-content/uploads/2018/12/placeholder-logo-2.png
 ```
 
 Replace the placeholders with your actual values.
