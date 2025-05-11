@@ -45,6 +45,7 @@ const sidebars: SidebarsConfig = {
       items: ["get-order-by-id", "update-order-status", "add-order-notes"],
     },
     "rate-limit",
+    "query-parameters",
     "permissions",
     "create_authorized_app_link",
     "connect-dropshipping",
