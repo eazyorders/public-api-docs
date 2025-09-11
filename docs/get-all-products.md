@@ -69,6 +69,14 @@ This example will filter for records where:
 
 Each filter condition is specified using a separate `filter=` parameter in the URL, joined with the `&` character.
 
+### Variants and Variations
+
+To get variant or variation data in the response, you must explicitly join them using the `join` parameter like this:
+
+```
+join=Variations.Props,Variants.VariationProps
+```
+
 ## Response Body (JSON)
 
 ```js
