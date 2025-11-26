@@ -133,6 +133,7 @@ const dataYouWillReceive = {
 
 ```js
 const dataYouWillReceive = {
+  event_type: "order-status-update",
   order_id: "2692e31f-27f6-472d-b4cd-c0c1c168511c", // order id
   old_status: "pending", // previous order status
   new_status: "confirmed", // new order status
