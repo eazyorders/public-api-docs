@@ -129,6 +129,16 @@ const dataYouWillReceive = {
 };
 ```
 
+#### Order Status Change
+
+```js
+const dataYouWillReceive = {
+  order_id: "2692e31f-27f6-472d-b4cd-c0c1c168511c", // order id
+  old_status: "pending", // previous order status
+  new_status: "confirmed", // new order status
+};
+```
+
 ## Deleting a Webhook
 
 To delete a webhook, you can use the DELETE endpoint. This is useful when you no longer need to receive webhook notifications or when you want to update your webhook URL.
