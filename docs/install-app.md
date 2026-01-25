@@ -26,6 +26,7 @@ app_icon=<APP_ICON_URL>&
 app_name=<APP_NAME>&
 callback_url=<CALLBACK_URL>&
 orders_webhook=<ORDERS_WEBHOOK_URL>&
+order_status_webhook=(optional)<ORDER_STATUS_WEBHOOK_URL>&
 permissions=<PERMISSIONS>&
 redirect_url=<REDIRECT_URL>
 ```
@@ -37,6 +38,7 @@ Replace the placeholders with the appropriate values:
 - `<APP_NAME>`: Name of your application.
 - `<CALLBACK_URL>`: URL where the authorization response will be sent.
 - `<ORDERS_WEBHOOK_URL>`: URL where orders webhook notifications will be sent.
+- `<ORDER_STATUS_WEBHOOK_URL>`: (Optional) URL where order status update webhook notifications will be sent.
 - `<PERMISSIONS>`: List of permissions required by your application.
 - `<REDIRECT_URL>`: URL where users will be redirected after authorizing your application.
 
