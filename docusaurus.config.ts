@@ -4,26 +4,18 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
   title: "EasyOrders API Docs",
-  tagline: "EasyOrders public API Documentation",
-  favicon: "https://www.easy-orders.net/easy-icon.png",
+  tagline: "Build powerful integrations with the EasyOrders platform",
+  favicon: "https://www.easyorders.eg/easy-icon.png",
 
-  // Set the production url of your site here
-  url: "https://public-api-docs.easy-orders.net",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: "https://public-api-docs.easyorders.eg",
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "easyorders", // Usually your GitHub org/user name.
-  projectName: "easyorders api", // Usually your repo name.
+  organizationName: "easyorders",
+  projectName: "easyorders api",
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -35,17 +27,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/eazyorders/themes-docs/blob/main/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/eazyorders/themes-docs/blob/main/",
         },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -61,71 +46,71 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "https://www.easyorders.eg/easy-icon.png",
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
-      title: "Public API Docs",
+      title: "EasyOrders",
       logo: {
         alt: "EasyOrders",
-        src: "https://www.easy-orders.net/easy-icon.png",
+        src: "https://www.easyorders.eg/easy-icon.png",
+        style: { height: "28px" },
       },
-      // items: [
-      //   {
-      //     type: "doc",
-      //     docId: "intro",
-      //     position: "left",
-      //     label: "Tutorial",
-      //   },
-      // ],
+      items: [
+        {
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "Documentation",
+        },
+        {
+          href: "https://www.easyorders.eg",
+          label: "EasyOrders.eg",
+          position: "right",
+        },
+      ],
     },
-    // footer: {
-    //   style: 'dark',
-    //   links: [
-    //     {
-    //       title: 'Docs',
-    //       items: [
-    //         {
-    //           label: 'Tutorial',
-    //           to: '/docs/intro',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'Community',
-    //       items: [
-    //         {
-    //           label: 'Stack Overflow',
-    //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-    //         },
-    //         {
-    //           label: 'Discord',
-    //           href: 'https://discordapp.com/invite/docusaurus',
-    //         },
-    //         {
-    //           label: 'Twitter',
-    //           href: 'https://twitter.com/docusaurus',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'More',
-    //       items: [
-    //         {
-    //           label: 'Blog',
-    //           to: '/blog',
-    //         },
-    //         {
-    //           label: 'GitHub',
-    //           href: 'https://github.com/facebook/docusaurus',
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    // },
+    footer: {
+      style: "light",
+      links: [
+        {
+          title: "Documentation",
+          items: [
+            { label: "Getting Started", to: "/docs/intro" },
+            { label: "Authentication", to: "/docs/authentication" },
+            { label: "Webhooks", to: "/docs/webhooks" },
+          ],
+        },
+        {
+          title: "API Reference",
+          items: [
+            { label: "Products", to: "/docs/create-product-api" },
+            { label: "Categories", to: "/docs/create-category" },
+            { label: "Orders", to: "/docs/get-order-by-id" },
+          ],
+        },
+        {
+          title: "Resources",
+          items: [
+            { label: "Rate Limits", to: "/docs/rate-limit" },
+            { label: "Permissions", to: "/docs/permissions" },
+            { label: "EasyOrders Website", href: "https://www.easyorders.eg" },
+          ],
+        },
+      ],
+      copyright: `© ${new Date().getFullYear()} EasyOrders. All rights reserved.`,
+    },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.vsDark,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: ["bash", "json", "http"],
+    },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
     },
   } satisfies Preset.ThemeConfig,
 };
