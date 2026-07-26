@@ -42,7 +42,12 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Orders",
-      items: ["get-order-by-id", "update-order-status", "add-order-notes"],
+      items: [
+        "get-order-by-id",
+        "get-order-by-short-id",
+        "update-order-status",
+        "add-order-notes",
+      ],
     },
     "rate-limit",
     "query-parameters",
