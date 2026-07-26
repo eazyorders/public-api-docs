@@ -53,12 +53,12 @@ const dataYouWillReceive = {
       visit_duration_seconds: 24,
     },
   },
-  full_name: "محمد بهجت نبوي كابس", // customer name
-  email: "kabespay@gmail.com", // customer email
-  phone: "01003918810", // customer phone
+  full_name: "حسام ملاك محمد", // customer name
+  email: "test12@gmail.com", // customer email
+  phone: "01208348383", // customer phone
   government: "المنيا", // customer gov
   address: "منوف المنوفية مصر", // customer address
-  ip: "41.69.119.225:56718",
+  ip: "41.69.245.555:43543",
   ip_country: "eg",
   payment_method: "cod",
   cart_items: [
