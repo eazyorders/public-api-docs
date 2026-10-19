@@ -43,6 +43,7 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "Orders",
       items: [
+        "create-order",
         "get-order-by-id",
         "get-order-by-short-id",
         "update-order-status",
