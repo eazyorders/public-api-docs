@@ -18,7 +18,7 @@ const features = [
   {
     title: "Orders API",
     description:
-      "Retrieve order details, update fulfillment status, and add notes to streamline your order management workflow.",
+      "Create orders from your systems, retrieve order details, update fulfillment status, and add notes to streamline your order management workflow.",
     link: "/docs/get-order-by-id",
     icon: (
       <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
